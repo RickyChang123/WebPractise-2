@@ -1,0 +1,70 @@
+article {
+  margin: 2rem auto;
+  max-width: 30rem;
+  padding: 2rem;
+  background-color: #282620;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 8px solid transparent;
+}
+
+img {
+  max-width: 20rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header p {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding: 0.15rem 0.25rem;
+  color: white;
+  border-radius: 4px;
+}
+
+header button {
+  font-size: 1.75rem;
+}
+
+p {
+  color: #c3c0b9;
+  margin: 0.5rem;
+}
+
+#description-box {
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2e090;
+  color: #282620;
+  margin-top: 10px;
+  word-wrap: break-word; /* 防止文字超出方框 */
+}
+
+form {
+  text-align: right;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  font: inherit;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background-color: transparent;
+  color: #f2e090;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+button:hover,
+button:active {
+  color: #f8d63c;
+}

@@ -1,0 +1,19 @@
+<article *ngFor="let place of filterPlaces">
+  <header>
+    <p>
+      {{ place.name }}
+    </p>
+    <button (click)="onCancelButton(place)">
+      <i class="bi bi-x-circle"></i>
+    </button>
+  </header>
+
+  <p>
+    <img [src]="place.img" alt="{{ place.name }}" />
+  </p>
+
+  <p>Description:</p>
+  <p id="description-box">
+    {{ place.description }}
+  </p>
+</article>

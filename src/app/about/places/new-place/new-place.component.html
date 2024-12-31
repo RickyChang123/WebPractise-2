@@ -1,0 +1,16 @@
+<header>
+  <h2>MY PlACE</h2>
+
+  <p>
+    <select (change)="onChangeFliter(placeselect.value)" #placeselect>
+      <option value="All">All</option>
+      <option value="japanese-temple">japanese-temple</option>
+      <option value="amazon-river">amazon-river</option>
+      <option value="taj-mahal">taj-mahal</option>
+    </select>
+  </p>
+</header>
+
+<ul>
+  <li><app-place-item [selectPlace]="selectPlace"></app-place-item></li>
+</ul>

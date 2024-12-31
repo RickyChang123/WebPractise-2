@@ -1,0 +1,48 @@
+h1 {
+  font-size: 5rem;
+}
+.space {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.space .title img {
+  width: 5vh;
+}
+
+.space .title p {
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.introduction {
+  border-style: 5rem solid white;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.introduction p {
+  width: 50vh;
+  color: aliceblue;
+  height: auto;
+  margin-left: 2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.introduction img {
+  border-radius: 30px;
+  width: 50vh;
+  height: auto;
+  margin: 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.introduction img:hover {
+  transform: scale(1.1);
+  animation-iteration-count: 2;
+}

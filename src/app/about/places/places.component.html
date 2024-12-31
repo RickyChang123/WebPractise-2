@@ -1,0 +1,28 @@
+<header class="section" appScroll>
+  <img src="logo.png " alt="..." />
+  <h1>YOUR FAVORITE PLACE</h1>
+</header>
+
+<form (ngSubmit)="onAdd()">
+  <p>
+    <label for="title">Favorite Place</label>
+    <select name="place" [(ngModel)]="selectedPlace">
+      <option value="" disabled selected></option>
+      <option value="japanese-temple">japanese-temple</option>
+      <option value="amazon-river">amazon-river</option>
+      <option value="taj-mahal">taj-mahal</option>
+    </select>
+  </p>
+  <p>
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      name="description"
+      [(ngModel)]="description"
+    ></textarea>
+  </p>
+  <p id="actions">
+    <button>Add</button>
+  </p>
+</form>
+<app-new-place></app-new-place>
